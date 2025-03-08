@@ -1,12 +1,19 @@
 package main;
 
+import java.time.LocalDate;
+
 public class TiempoAnemico {
+    private LocalDate fecha;
 
-    public void mostrarLargo() {
-
+    public TiempoAnemico() {
+        this.fecha = LocalDate.now();
     }
 
-    public void mostrarCorto() {
+    public LocalDate getFecha() {
+        return fecha;
+    }
 
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
     }
 }
